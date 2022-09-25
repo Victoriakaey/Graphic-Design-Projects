@@ -7,4 +7,4 @@ Function:
 3. You can modify the size of Point and Triangle by dragging the "Shape Size" part, and modify the size of Circle by dragging the "(Circles) Segment Count:" part.
 4. You can modify the color to Green or Red, by clicking the "Green", "Red" buttons. And you can also modify the color by dragging "Red", "Green", "Blue".
 
-Now try to draw the pink triangle cat below
+Now try to draw the pink triangle cat below by yourself! 
