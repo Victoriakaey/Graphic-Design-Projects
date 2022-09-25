@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Kitty Bangbang cat in the maze</title>
+  </head>
+
+
+  <body onload="main()">
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <div id='perfData'> </div>
+
+    <p>
+      Background: go find the cat!
+
+    <p>
+      <button type='button' id='eating'> Give him an Ice Cream</button>
+      <button type='button' id='sleeping'> Watch him sleeping </button>
+      <button type='button' id='standing'> Say HI to him</button>
+      <p>
+      </bold> Animation: <button type='button' id='animation'> Off </button>
+    <p>
+      <div>Moving Model: <span id='movingMode'>walking</span>
+      <button type='button' id='walking'> walking </button>
+      <button type='button' id='running'> running </button>
+      <div>
+    <div> Instruction: </div>
+    <div> 1. Use WASD to walk; use QE/Mouse to rotate your head!</div>
+    <div> 2. Find the animal in this 3D Maze.
+    <div> 3. You can play with KittyBangbang!
+    <div> 4. You can also control his movement using the following slides.
+    <p>
+    Animation Off And Standing Still: <button type='button' id='still'> yes </button>
+    <p>
+    Replay: <button type='button' id='reload'> yes </button>
+    <p>
+    <p>
+    Camera Angle (Horizontal): <input type='range' value='5' min='-180' max='180' class='slider' id='angleSlide'>
+    Camera Angle (Upright): <input type='range' value='5' min='-180' max='180' class='slider' id='angleSlide2'>
+
+    <p>
+    Body Rotation Angle: <input type='range' value='5' min='-90' max='90' class='slider' id='bodyRotationAngleSlide'>
+    Body Size: <input type='range' value='40' min='0' max='200' class='slider' id='bodySizeSlide'>
+    Body Translate-X: <input type='range' value='40' min='-100' max='100' class='slider' id='bodyTranslateX'>
+    Body Translate-Y: <input type='range' value='40' min='-100' max='100' class='slider' id='bodyTranslateY'>
+    Body Translate-Z: <input type='range' value='40' min='-100' max='100' class='slider' id='bodyTranslateZ'>
+    <p>
+    Head Rotation Angle: <input type='range' value='0' min='-80' max='80' class='slider' id='headRotationSlide'>
+    Head Rotation Angle (upright): <input type='range' value='0' min='-10' max='10' class='slider' id='headRotationSlide2'>
+    Left ear Rotation Angle: <input type='range' value='0' min='0' max='10' class='slider' id='leftearRotationSlide'>
+    Right ear Rotation Angle: <input type='range' value='0' min='0' max='10' class='slider' id='rightearRotationSlide'>
+    EyeBrow Angle: <input type='range' value='0' min='-10' max='10' class='slider' id='earbrowRotationSlide'>
+    Eye Movement: <input type='range' value='0' min='-5' max='5' class='slider' id='eyeMovementSlide'>
+    Left Eye Size: <input type='range' value='4' min='2' max='4' class='slider' id='eyeSizeSlide'>
+    Right Eye Size: <input type='range' value='4' min='2' max='4' class='slider' id='eyeSizeSlide2'>
+    <p>
+    left Shoulder Angle: <input type='range' value='0' min='-180' max='180' class='slider' id='leftshoulderRotationSlide'>
+    left middle arm (Spin) <input type='range' value='0' min='-90' max='90' class='slider' id='leftMidArmUprightSlide'>
+    left middle arm (Spread) <input type='range' value='0' min='-90' max='90' class='slider' id='leftMidArmSpreadSlide'>
+    left middle arm (bend) <input type='range' value='0' min='-20' max='90' class='slider' id='leftMidArmBendSlide'>
+    left low hand (bend) <input type='range' value='0' min='0' max='90' class='slider' id='leftLowHandSlide'>
+    <p>
+    right Shoulder Angle: <input type='range' value='0' min='-80' max='80' class='slider' id='rightshoulderRotationSlide'>
+    right middle arm (Spin) <input type='range' value='0' min='-90' max='90' class='slider' id='rightMidArmUprightSlide'>
+    right middle arm (Spread) <input type='range' value='0' min='-90' max='90' class='slider' id='rightMidArmSpreadSlide'>
+    right middle arm (bend) <input type='range' value='0' min='0' max='90' class='slider' id='rightMidArmBendSlide'>
+    right low hand (bend) <input type='range' value='0' min='0' max='90' class='slider' id='rightLowHandSlide'>
+    <p>
+    left upper Leg Angle: <input type='range' value='0' min='-30' max='90' class='slider' id='leftLegRotationSlide'>
+    left lower Leg Angle: <input type='range' value='0' min='-90' max='0' class='slider' id='leftLowerLegRotationSlide'>
+    right upper Leg Angle: <input type='range' value='0' min='-30' max='90' class='slider' id='rightLegRotationSlide'>
+    right lower Leg Angle: <input type='range' value='0' min='-90' max='0' class='slider' id='rightLowerLegRotationSlide'>
+
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="BlockyWorld.js"></script>
+    <script src="KittyBangbang.js"></script>
+    <script src='Texture.js'></script>
+    <script src='map.js'></script>
+    <script src='Camera.js'></script>
+    <script src="shapelib/Cube.js"></script>
+    <script src='shapelib/Triangle.js'></script>
+    <script src="shapelib/Shape.js"></script>
+    <script src="shapelib/Circle.js"></script>
+  </body>
+</html>
