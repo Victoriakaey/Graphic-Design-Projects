@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>KittyBangbang</title>
+    </head>
+
+    <body onload="main()">
+        <canvas id="webgl" width="400" height="400">
+            Please use the browser supporting "canvas".
+        </canvas>
+        <p>
+
+        <p id="numdot"> XXX </p>
+
+        <p>
+          This is a cat figure combination of Kitty and Bangbang,
+          happily floating in between of white and black buildings
+        </p>
+
+        <p> Head moving <input type="range" min=-25 max="25" value="0" class="slider" id="headSlide">
+            Animation:
+            <button type="button" id="animationonHeadOnButton">ON</button>
+            <button type="button" id="animationonHeadOffButton">OFF</button>
+        </p>
+
+        <p> Tail moving <input type="range" min=-15 max="15" value="0" class="slider" id="tailSlide">
+            Animation:
+            <button type="button" id="animationonTailOnButton">ON</button>
+            <button type="button" id="animationonTailOffButton">OFF</button>
+        </p>
+
+        <p> Leg moving <input type="range" min=-15 max="15" value="0" class="slider" id="legSlide">
+            Animation:
+            <button type="button" id="animationonLegOnButton">ON</button>
+            <button type="button" id="animationonLegOffButton">OFF</button>
+        </p>
+
+        <p> Feet moving <input type="range" min=-15 max="15" value="0" class="slider" id="feetSlide">
+            Animation:
+            <button type="button" id="animationonFeetOnButton">ON</button>
+            <button type="button" id="animationonFeetOffButton">OFF</button>
+        </p>
+
+        <p> Camera Angle <input type="range" min="-160" max="160" value="30" class="slider" id="angleSlide"></p>
+
+        <p>
+          I also wanted to attach a cute picture of my two sweet babies here for you all!! (Sorry for the large picture, I don't know how to make it smaller...)
+        </p>
+        <p>
+          The white cat is Kitty and the black cat is Bangbang
+        </p>
+
+        <p>
+        <img src="KittyBangbang.jpg" alt=" ">
+        </p>
+
+        <script src="lib/webgl-utils.js"></script>
+        <script src="lib/webgl-debug.js"></script>
+        <script src="lib/cuon-utils.js"></script>
+        <script src="lib/cuon-matrix.js"></script>
+        <script src="Point.js"></script>
+        <script src="Triangle.js"></script>
+        <script src="Circle.js"></script>
+        <script src="Cube.js"></script>
+        <script src="KittyBangbang.js"></script>
+
+    </body>
+
+</html>
